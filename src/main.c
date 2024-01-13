@@ -12,7 +12,7 @@ int main(int argc, char** argv)
 	errno_t status;
 	unsigned int* arr;
 	unsigned int* tmp;
-	int numtasks, rank, i, count = 1000, times = 1;
+	int numtasks, rank, i, count = 10000000, times = 10;
 
 	MPI_Init(&argc, &argv);
 	MPI_Comm_rank(MPI_COMM_WORLD, &rank);
